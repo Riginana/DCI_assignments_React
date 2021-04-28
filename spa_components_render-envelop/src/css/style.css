@@ -1,0 +1,43 @@
+.main {
+  border: 2px solid black;
+  max-width: 700px;
+  height: 300px;
+  margin: 40px;
+  position: relative;
+}
+
+.receiver {
+  font-weight: 600;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  line-height: 0.5;
+}
+
+.sender {
+  position: absolute;
+  font-weight: 600;
+  bottom: 25px;
+  right: 10px;
+  left: 500px;
+  line-height: 0.5;
+}
+
+.stamp {
+  color: grey;
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  height: 80px;
+  width: 75px;
+  border: 1px solid black;
+}
+
+.stampInner {
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 25px;
+  left: 4px;
+  font-size: 20px;
+  font-weight: 600;
+}
