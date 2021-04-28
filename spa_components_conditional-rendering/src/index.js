@@ -3,21 +3,22 @@ import ReactDOM from "react-dom";
 
 const Alert = () => {
   const colorClasses = {
-    color: "red",
+    color: "orange",
 	  text4Red:"OMG! Something really bad has happended!",
 	  text4Orange:"Well, it is not that bad after all!"
   };
   //your component here
   return(
     <>
-    <div className="alert alert-danger" role="alert">
-        { colorClasses.text4Red }
-
-    </div>
-
-    <div className="alert alert-warning" role="alert">
+    { 
+      (colorClasses.color === "red") ?
+      <div className="alert alert-danger" role="alert">
+      { colorClasses.text4Red }
+      </div> :
+      <div className="alert alert-warning" role="alert">
         { colorClasses.text4Orange }
-    </div>
+      </div>
+    }
     </>
   )
 };
